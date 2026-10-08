@@ -419,6 +419,8 @@ export const educationData: EducationItem[] = [
       { label: 'Semester 1', score: '7.36 SGPA' },
       { label: 'Semester 2', score: '6.68 SGPA' },
       { label: 'Semester 3', score: '6.67 SGPA' },
+      { label: 'Semester 4', score: '6.09 SGPA' },
+      { label: 'Semester 5', score: '7.09 SGPA' },
     ],
     scoreSummary: 'Current Academic Standing: 7.36 / 6.68 / 6.67 SGPA',
   },
