@@ -414,7 +414,7 @@ export const educationData: EducationItem[] = [
     degree: 'Bachelor of Computer Applications (BCA)',
     institution: 'Contai College of Learning & Management Science',
     boardOrAffiliation: 'MAKAUT, West Bengal',
-    period: '2023 – 2026',
+    period: '2023 – 2027',
     academicResults: [
       { label: 'Semester 1', score: '7.36 SGPA' },
       { label: 'Semester 2', score: '6.68 SGPA' },
