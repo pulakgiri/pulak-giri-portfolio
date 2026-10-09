@@ -80,7 +80,7 @@ export const Skills: React.FC = () => {
           ?.skills.map((skill) => ({ ...skill, category: selectedCategory })) || [];
 
   return (
-    <section id="skills" className="py-16 sm:py-20 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
+    <section id="skills" className="motion-section py-16 sm:py-20 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
@@ -119,7 +119,7 @@ export const Skills: React.FC = () => {
           {displayedSkills.map((skill, index) => (
             <div
               key={`${skill.name}-${index}`}
-              className="p-5 rounded-xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white hover:border-[#55D6FF]/40 transition-all duration-200 group flex flex-col justify-between"
+              className="glass-panel p-5 rounded-xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white hover:border-[#55D6FF]/40 transition-all duration-200 group flex flex-col justify-between"
             >
               <div className="space-y-3">
                 <div className="flex items-center justify-between">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import {
   Github,
   ExternalLink,
@@ -36,16 +36,20 @@ const getProjectIcon = (iconName: string) => {
 };
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenDetails }) => {
+  const projectStyle: CSSProperties & { '--project-accent': string } = {
+    '--project-accent': project.mockupTheme.accentColor,
+  };
+
   return (
-    <div className="group rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-[#55D6FF]/50 hover:-translate-y-1 shadow-md hover:shadow-xl">
+    <div style={projectStyle} className="glass-panel group rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-[#55D6FF]/50 hover:-translate-y-1 shadow-md hover:shadow-xl">
       {/* Visual Header / Mockup Representation */}
-      <div className="relative h-48 sm:h-52 w-full bg-gradient-to-br from-[#121822] via-[#0E1219] to-[#07090D] border-b border-[#202733] dark:border-[#202733] border-[#E2E8F0] p-6 flex flex-col justify-between overflow-hidden">
+      <div className="project-card-visual relative h-48 sm:h-52 w-full border-b border-[#202733] dark:border-[#202733] border-[#E2E8F0] p-6 flex flex-col justify-between overflow-hidden">
         {/* Subtle grid in card */}
         <div className="absolute inset-0 bg-grid-pattern opacity-30 group-hover:opacity-60 transition-opacity" />
 
         {/* Top Badges */}
         <div className="relative z-10 flex items-center justify-between">
-          <span className="font-mono text-xs font-bold text-[#55D6FF] dark:text-[#55D6FF] text-[#0284C7] bg-[#55D6FF]/10 px-2.5 py-1 rounded-md border border-[#55D6FF]/20">
+          <span className="project-number font-mono text-xs font-bold px-2.5 py-1 rounded-md border">
             PROJECT {project.number}
           </span>
           <div className="p-2 rounded-xl bg-[#0E1219]/90 border border-[#202733] backdrop-blur-sm">

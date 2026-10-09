@@ -27,7 +27,7 @@ export const CodeCard: React.FC = () => {
       <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#55D6FF]/15 via-[#7C6CFF]/15 to-transparent blur-xl opacity-70 group-hover:opacity-100 transition duration-500 pointer-events-none" />
 
       {/* Main card */}
-      <div className="relative rounded-xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-[#FFFFFF] shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
+      <div className="glass-panel relative rounded-xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-[#FFFFFF] shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
         {/* Top Window Bar */}
         <div className="flex items-center justify-between px-4 py-3 bg-[#121822] dark:bg-[#121822] bg-[#F1F5F9] border-b border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
           <div className="flex items-center space-x-2">

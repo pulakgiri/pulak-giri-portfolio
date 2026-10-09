@@ -43,7 +43,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
+    <section id="contact" className="motion-section py-16 sm:py-24 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Section Header */}
         <div className="space-y-3 max-w-2xl">
@@ -66,7 +66,7 @@ export const Contact: React.FC = () => {
           {/* Left Column: Direct Contact Info Cards */}
           <div className="lg:col-span-5 space-y-4">
             {/* Email Card with Copy button */}
-            <div className="p-5 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white space-y-3 shadow-sm">
+            <div className="glass-panel p-5 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white space-y-3 shadow-sm">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2 text-xs font-mono uppercase tracking-wider text-[#9BA5B5] dark:text-[#9BA5B5] text-[#64748B]">
                   <Mail className="w-4 h-4 text-[#55D6FF]" />
@@ -103,7 +103,7 @@ export const Contact: React.FC = () => {
               href={personalProfile.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-5 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white flex items-center justify-between group hover:border-[#55D6FF]/50 transition-colors shadow-sm block"
+              className="glass-panel p-5 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white flex items-center justify-between group hover:border-[#55D6FF]/50 transition-colors shadow-sm block"
             >
               <div className="flex items-center space-x-3">
                 <div className="p-2 rounded-xl bg-[#121822] dark:bg-[#121822] bg-[#F1F5F9] text-[#55D6FF]">
@@ -126,7 +126,7 @@ export const Contact: React.FC = () => {
               href={personalProfile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-5 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white flex items-center justify-between group hover:border-[#7C6CFF]/50 transition-colors shadow-sm block"
+              className="glass-panel p-5 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white flex items-center justify-between group hover:border-[#7C6CFF]/50 transition-colors shadow-sm block"
             >
               <div className="flex items-center space-x-3">
                 <div className="p-2 rounded-xl bg-[#121822] dark:bg-[#121822] bg-[#F1F5F9] text-[#7C6CFF]">
@@ -145,7 +145,7 @@ export const Contact: React.FC = () => {
             </a>
 
             {/* Location Card */}
-            <div className="p-5 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white flex items-center space-x-3 shadow-sm">
+            <div className="glass-panel p-5 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white flex items-center space-x-3 shadow-sm">
               <div className="p-2 rounded-xl bg-[#121822] dark:bg-[#121822] bg-[#F1F5F9] text-[#10B981]">
                 <MapPin className="w-5 h-5" />
               </div>
@@ -161,7 +161,7 @@ export const Contact: React.FC = () => {
           </div>
 
           {/* Right Column: Interactive Contact Form */}
-          <div className="lg:col-span-7 p-6 sm:p-8 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white shadow-xl space-y-6">
+          <div className="glass-panel lg:col-span-7 p-6 sm:p-8 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white shadow-xl space-y-6">
             <div className="space-y-1">
               <h3 className="font-heading font-bold text-lg sm:text-xl text-[#F4F7FB] dark:text-[#F4F7FB] text-[#0F172A]">
                 Send a Message

@@ -4,7 +4,7 @@ import { educationData } from '../data/profile';
 
 export const Education: React.FC = () => {
   return (
-    <section id="education" className="py-16 sm:py-20 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
+    <section id="education" className="motion-section py-16 sm:py-20 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Header */}
         <div className="space-y-2">
@@ -24,7 +24,7 @@ export const Education: React.FC = () => {
           {educationData.map((item, index) => (
             <div
               key={index}
-              className="p-6 sm:p-7 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white flex flex-col justify-between space-y-6 hover:border-[#55D6FF]/40 transition-colors shadow-sm"
+              className="glass-panel p-6 sm:p-7 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white flex flex-col justify-between space-y-6 hover:border-[#55D6FF]/40 transition-colors shadow-sm"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

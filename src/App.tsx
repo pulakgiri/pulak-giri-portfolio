@@ -33,6 +33,31 @@ export const AppContent: React.FC = () => {
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll<HTMLElement>('main > .motion-section');
+    const reveal = (section: HTMLElement) => section.classList.add('is-visible');
+
+    if (!('IntersectionObserver' in window)) {
+      sections.forEach(reveal);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            reveal(entry.target as HTMLElement);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
   const handleOpenProjectDetails = (project: Project) => {
     setSelectedProject(project);
     window.history.pushState(null, '', `#${project.id}`);

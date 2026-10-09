@@ -4,7 +4,7 @@ import { experienceData } from '../data/profile';
 
 export const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-16 sm:py-20 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
+    <section id="experience" className="motion-section py-16 sm:py-20 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Section Header */}
         <div className="space-y-2">
@@ -24,7 +24,7 @@ export const Experience: React.FC = () => {
           {experienceData.map((item, index) => (
             <div
               key={index}
-              className="relative p-6 sm:p-8 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white space-y-6 hover:border-[#55D6FF]/40 transition-colors shadow-sm"
+              className="glass-panel relative p-6 sm:p-8 rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white space-y-6 hover:border-[#55D6FF]/40 transition-colors shadow-sm"
             >
               {/* Header row */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#202733] dark:border-[#202733] border-[#E2E8F0] pb-5">

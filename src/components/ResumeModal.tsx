@@ -33,7 +33,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-3xl max-h-[92vh] overflow-y-auto rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-[#FFFFFF] shadow-2xl text-[#F4F7FB] dark:text-[#F4F7FB] text-[#0F172A] p-6 sm:p-8 space-y-6"
+        className="glass-window relative w-full max-w-3xl max-h-[92vh] overflow-y-auto rounded-2xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-[#FFFFFF] shadow-2xl text-[#F4F7FB] dark:text-[#F4F7FB] text-[#0F172A] p-6 sm:p-8 space-y-6"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header Bar */}

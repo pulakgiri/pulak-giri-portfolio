@@ -22,7 +22,7 @@ export const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-16 sm:py-20 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
+    <section id="about" className="motion-section py-16 sm:py-20 border-t border-[#202733] dark:border-[#202733] border-[#E2E8F0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Section Left / Heading */}
@@ -54,7 +54,7 @@ export const About: React.FC = () => {
               {highlights.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 rounded-xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white space-y-2 hover:border-[#55D6FF]/40 transition-colors"
+                  className="glass-panel p-4 rounded-xl border border-[#202733] dark:border-[#202733] border-[#E2E8F0] bg-[#0E1219] dark:bg-[#0E1219] bg-white space-y-2 hover:border-[#55D6FF]/40 transition-colors"
                 >
                   <div className="p-2 w-fit rounded-lg bg-[#121822] dark:bg-[#121822] bg-[#F1F5F9]">
                     {item.icon}
